@@ -33,7 +33,6 @@ p {
 
 header {
 padding: 5px;
-margin-bottom: 20px;
 background-color: var(--color-primary-dark);
 color: white;
 display: flex;
@@ -72,4 +71,12 @@ text-decoration: none;
 
 a:hover {
   color: var(--color-secondary);
+}
+
+.featured-content {
+height: 60vh;
+background:  linear-gradient(to bottom, rgba(0,0,0,0), #050609) ,url('/resources/batman.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 }
