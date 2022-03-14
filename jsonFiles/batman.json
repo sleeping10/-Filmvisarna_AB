@@ -1,0 +1,48 @@
+[
+  {
+    "title": "The Batman",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 175,
+    "genre": "Action",
+    "distributor": "UIP",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Matt Reeves",
+    "age": "15",
+    "actors": [
+      "Robert Pattinson",
+      "Zoë Kravitz",
+      "Colin Farrell"
+    ],
+    "description": "<p>I två år har Bruce Wayne vakat över gatorna i Gotham City som Batman. När en mördare riktar in sig på Gothams elit med en serie av sadistiska mord, leder ett spår av kryptiska ledtrådar in Batman i den undre världen.</p><p> Bevisen leder närmare och närmare hans egen familj och vidden av mördarens planer blir tydliga. Batman måste skapa nya allianser och avslöja den skyldige för att rädda Gotham City.</p>",
+    
+    "youtubeTrailers": [
+      "Z9AYPxH5NTM"
+    ], 
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "Batman lika dyster som vanligt",
+        "stars": 2,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "Batman tillbaka – otäckare än någonsin",
+        "stars": 5,
+        "max": 6
+      },
+      {
+        "source": "DN",
+        "quote": "Robert Pattinson perfekt som splittrad emo-vigilante i ”The Batman” ",
+        "stars": 3,
+        "max": 5
+      }
+    ]
+    
+
+  }
+]

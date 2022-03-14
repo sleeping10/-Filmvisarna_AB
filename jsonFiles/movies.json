@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Jackass Forever",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 95,
+    "genre": "Comedy",
+    "distributor": "UIP",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Jeff Tremaine",
+    "age": "15",
+    "actors": [
+      "Johnny Knoxvile",
+      "Chris Pontius",
+      "Steve-O"
+    ],
+    "description": "<p>För 20 år sedan hade jackass-serien, med en grupp orädda idioter som gjorde stunts och spratt för att få varandra att skratta, premiär. 2010 blev jackass 3D den tredje filmen i serien som blev nummer ett i biljettkassorna.</p><p> Ett decennium senare ... blev Knoxville sugen igen. Han ringde sina partners, Jeff Tremaine och Spike Jonze, och sa att det var dags att samla gänget igen.</p>",
+    
+    "youtubeTrailers": [
+      "Z9AYPxH5NTM"
+    ], 
+    "reviews": [
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "Självplågande dårar överraskande ärliga",
+        "stars": 3,
+        "max": 6
+      },
+      {
+        "source": "DN",
+        "quote": "Överlevarna i ”Jackass forever” lockar till välbehövligt skratt ",
+        "stars": 3,
+        "max": 5
+      }
+    ]
+    
+
+  }
+]
