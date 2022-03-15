@@ -3,20 +3,128 @@
 
   <style>
     .h1 {
+      text-align: left;
+      position: relative;
+      top: -150px;
+      color: white;
+
+    }
+  </style>
+
+  <style>
+    .h2 {
+
       text-align: center;
 
     }
   </style>
-  <div class="h1">
 
-    <!-- Block parent element -->
-    <img src="/resources/lotr.jpg" width="200" height="260" alt="SATOR">
-    <p>hello</p>
+  <style>
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    .h7 {
+      color: grey;
+
+    }
+  </style>
+
+  <div class="h2">
+    <!---->
+
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/aWzlQ2N6qqg?">
+    </iframe>
+  </div>
+  <div class="h1">
+    <form action="https://google.com">
+      <input type="submit" value="Köp Biljetter" />
+    </form>
+    <img src="/resources/doctor.jpg" width="200" height="260" alt="SATOR">
+    <p>Gränserna mellan världar försvagas när Multiversum öppnar sig. Dr. Stephen Strange färdas in i det okända med både gamla
+    och nya allierade och måste ta sig till farliga, alternativa verkligheter i Multiversum för att till slut kunna
+    konfrontera en gåtfull motståndare.
+    </p>
+    <div class="h3">
+      <p>
+        Regi:
+      </p>
+
+    </div>
+    <p>
+      Sam Raimi
+    </p>
+
+    <div class="h4">
+      <p>
+        Skådespelare:
+      </p>
+    </div>
+
+    <p>
+      Benedict Cumberbatch, Chiwetel Ejiofor, Elizabeth Olsen, Benedict Wong, Xochitl Gomez, Michael Stuhlbarg, Rachel Mcadams
+    </p>
+
+    <div class="h5">
+      <p>
+        Orginatitel:
+      </p>
+    </div>
+
+    <p>
+      Doctor Strange in the Multiverse of Madness
+    </p>
+
+    <div class=h6>
+      <p>
+        Orginalspråk:
+      </p>
+    </div>
+    <p>
+      Engelska
+    </p>
+    <div class="h7">
+      <p>
+        Premiär:
+      </p>
+    </div>
+
+    <p>
+      4 maj 2022
+    </p>
+
+
     <script src="/js/readJson.js"></script>
   </div>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
-
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+  <div class="row">
+    <div class="column">
+      <img src="/resources/doctorstrange/dd.jpg" alt="Room with magic" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/resources/doctorstrange/doctor-strange.jpeg" alt="selfie" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="/resources/doctorstrange/Screen-Shot.png" alt="Villian" style="width:100%" height="500%">
+    </div>
+  </div>
 
 
 
