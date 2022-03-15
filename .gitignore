@@ -13,4 +13,6 @@
 
 # Mac shit
 *.DS_Store
+node_modules
+
 
