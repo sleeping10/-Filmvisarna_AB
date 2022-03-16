@@ -13,14 +13,14 @@ function renderMovieList(cssSelector, list) {
     html += '<div id="box-img" class="box-img">';
     html += '<img src="./resources/' + movie.image2 + '" alt="" />';
     html += "</div>";
-    html += "<h3>" + movie.title + "</h3>";
+    html += "<h3>" + movie.titel + "</h3>";
     html += "<span>" + movie.duration + " / " + movie.genre + "</span>";
     html += "</div >";
   }
 
   document.querySelector(cssSelector).innerHTML = html;
 
-  //When click on the image will take you to movie page
+  //When click on the image will take you to movie page//NOt implemented yet
   movieDetails();
 
   return html;

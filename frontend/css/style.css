@@ -121,7 +121,7 @@ a:hover {
   width: 60px;
   background: var(--button-color);
   border-radius: 10px;
-  color: var(--text-color);
+  color: red;
   margin-top: 65px;
 }
 @media (max-width: 370px) {
@@ -186,10 +186,12 @@ a:hover {
   font-weight: 20px;
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #fff;
 }
 .box span {
   font-size: 20px;
   font-weight: 10px;
+  color: #fff;
 }/*FILTER BOX*/
 .filter-box {
   display: flex;
@@ -223,7 +225,7 @@ a:hover {
   /*background: #622252;*/
   border-radius: 3px;
   /*border: 2px solid var(--heading-color);*/
-  border: 2px solid var(--button-color);
+  border: 2px solid cadetblue;
   outline: none;
   padding: 0 20px 0 10px;
   margin-top: 5px;

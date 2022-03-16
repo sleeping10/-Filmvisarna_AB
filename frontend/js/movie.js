@@ -5,7 +5,7 @@ function renderMovie(cssSelector, movie) {
   html += '<div id="box-img" class="box-img" >';
   html += '<img src="./resources/' + movie.image2 + '" alt="" />';
   html += "</div>";
-  html += '<h3 id="h3">' + movie.title + "</h3>";
+  html += '<h3 id="h3">' + movie.titel + "</h3>";
   html += '<h3 id="h3">' + "Director: " + movie.director + "</h3>";
   html += '<h3 id="h3">' + "Actors: " + movie.actors + "</h3>";
   html += '<h3 id="h3">' + "Age Limit: +" + movie.ageLimit + "</h3>";

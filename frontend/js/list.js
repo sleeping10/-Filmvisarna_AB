@@ -45,11 +45,10 @@ function setupSelectorAge(selector) {
 function setupSelectorType(selector) {
   selector.addEventListener("change", (e) => {
     MovieType = e.target.value;
-    console.log("changed", e.target.value);
   });
 
   selector.addEventListener("mousedown", (e) => {
-    if (window.innerWidth >= 420) {
+    if (window.innerWidth >= 350) {
       // override look for non mobile
       e.preventDefault();
 
@@ -87,7 +86,9 @@ function setupSelectorType(selector) {
 
 //Click on Submit button for filtering
 async function applyFilter() {
-  let type = document.getElementById("filter-down-box-type").value
+  let type = document.getElementById("filter-down-box-type").value;
+  let age = document.getElementById("filter-down-box-age").value;
+
   if (age != "all") {
     age = Math.floor(age);
   }
@@ -97,11 +98,26 @@ async function applyFilter() {
 
   for (let i = 0; i < movieList.length; i++) {
     if (age == "all" && type == "all") {
-      // Will rerender the first page with all movies
+      // Shows the first page with all MoviesS
+      start();
+    }
+
+    if (age == "all" && type != "all" && movieList[i].genre.includes(type)) {
+      filterList.push(movieList[i]);
       renderMovieList(".active-movies-container", filterList);
     }
 
-    if (age != "all" && movieList[i].ageLimit <= age) {
+    if (age != "all" && type == "all" && movieList[i].ageLimit <= age) {
+      filterList.push(movieList[i]);
+      renderMovieList(".active-movies-container", filterList);
+    }
+
+    if (
+      age != "all" &&
+      type != "all" &&
+      movieList[i].ageLimit <= age &&
+      movieList[i].genre.includes(type)
+    ) {
       filterList.push(movieList[i]);
       renderMovieList(".active-movies-container", filterList);
     }
@@ -110,5 +126,4 @@ async function applyFilter() {
       renderMovieList(".active-movies-container", filterList);
     }
   }
-
 }
