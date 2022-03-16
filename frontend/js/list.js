@@ -87,7 +87,28 @@ function setupSelectorType(selector) {
 
 //Click on Submit button for filtering
 async function applyFilter() {
-  let type = document.getElementById("filter-down-box-type").value;
-  let age = document.getElementById("filter-down-box-age").value;
+  let type = document.getElementById("filter-down-box-type").value
+  if (age != "all") {
+    age = Math.floor(age);
+  }
+
+  let movieList = await getData("/api/allActiveMovies");
+  let filterList = [];
+
+  for (let i = 0; i < movieList.length; i++) {
+    if (age == "all" && type == "all") {
+      // Will rerender the first page with all movies
+      renderMovieList(".active-movies-container", filterList);
+    }
+
+    if (age != "all" && movieList[i].ageLimit <= age) {
+      filterList.push(movieList[i]);
+      renderMovieList(".active-movies-container", filterList);
+    }
+    //If no match with movies will show an empty list
+    if (filterList.length == 0) {
+      renderMovieList(".active-movies-container", filterList);
+    }
+  }
 
 }
