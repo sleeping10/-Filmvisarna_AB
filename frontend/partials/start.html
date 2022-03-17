@@ -1,11 +1,43 @@
 <article>
-  <div class="featured-content">
-    <div class="featured-title">The Batman</div>
-    <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis fugiat
-      quasi fugit at, ea dicta reprehenderit repellendus a delectus eum neque placeat eius hic odio harum repudiandae
-      dolore earum.</p>
-    <button class="featured-button">TRAILER</button>
+  <!--Filter Box-->
+  <div class="filter-box">
+    <div class="age-filter">
+      <label class="filter-label-age">
+        Age
+        <select id="filter-down-box-age" name="filter-down-box">
+          <option selected value="all">ALL</option>
+          <option value=15>Från 15</option>
+          <option value=11>Från 11</option>
+          <option value=7>Barnfilmer</option>
+        </select>
+      </label>
+    </div>
+    <div class="type-filter">
+      <label class="filter-label-type">
+        Type
+        <select id="filter-down-box-type" name="filter-down-box">
+          <option selected value="all">ALL</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Adventure">Adventure</option>
+        </select>
+      </label>
+    </div>
+    <button class="apply-filter-btn" onClick="applyFilter()">Filter</button>
   </div>
+
+  <!--Movies Grid-->
+  <section class="movies" id="movies">
+    <h2 class="heading-title">IN THE CINEMA</h2>
+    <!--  <div class="movies-container"> -->
+    <!-- commented instead of removing -->
+    <div class="active-movies-container"></div>
+    <!-- dynamic list of allActiveMovies -->
+    </div>
+    <!--   </div> -->
+  </section>
 
   <div class="nyheter-list-container">
     <h1 class="start-nyheter">Nyheter</h1>
