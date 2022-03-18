@@ -36,6 +36,7 @@ function setupSelectorAge(selector) {
       document.addEventListener("click", (e) => {
         if (!selector.contains(e.target)) {
           dropDown.remove();
+          //nuts
         }
       });
     }
