@@ -83,16 +83,6 @@ var bookButton = document.querySelector('.bookButton');
 
 bookButton.addEventListener("click", () => {
   populateUI();
-  /*if (
-    e.target.classList.contains("seat") &&
-    e.target.classList.contains("selected")
-  ) {
-    e.target.classList.toggle("sold");
-
-    updateSoldCount();
-
-  }
-  */
 });
 
 // Initial count and total set
