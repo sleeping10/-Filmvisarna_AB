@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/sleeping10/-Filmvisarna_AB.git"
   },
-  "author": "Martin Jussi, Ibrahim Ahmed Ali, Dino Tuzlak, David Håkansson",
+  "author": "Martin Jussi, Ibrahim Ahmed Ali, Dino Tuzlak, David Håkansson, Hassan Mousavi",
   "license": "ISC",
   "dependencies": {
     "-": "^0.0.1",
