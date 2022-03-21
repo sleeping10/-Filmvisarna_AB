@@ -83,6 +83,8 @@ var bookButton = document.querySelector('.bookButton');
 
 bookButton.addEventListener("click", () => {
   populateUI();
+  window.alert("You have booked your time!   You can live the site now :) ");
+
 });
 
 // Initial count and total set
