@@ -16,6 +16,7 @@
     "-": "^0.0.1",
     "better-sqlite3": "^7.5.0",
     "express": "^4.17.3",
+    "nodemon": "^2.0.15",
     "save": "^2.4.0"
   },
   "homepage": "https://github.com/sleeping10/-Filmvisarna_AB",
