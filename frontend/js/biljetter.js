@@ -31,6 +31,12 @@ function updateSelectedCount() {
   setMovieData(movieSelect.selectedIndex, movieSelect.value);
 }
 
+function updateSoldCount() {
+  const selectedSeats = localStorage.getItem("selectedSeats");
+
+
+}
+
 
 // Get data from localstorage and populate UI
 function populateUI() {
@@ -39,7 +45,7 @@ function populateUI() {
   if (selectedSeats !== null && selectedSeats.length > 0) {
     seats.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) {
-        console.log(seat.classList.add("selected"));
+        console.log(seat.classList.add("sold"));
       }
     });
   }
@@ -69,6 +75,24 @@ container.addEventListener("click", (e) => {
 
     updateSelectedCount();
   }
+
+
+});
+
+var bookButton = document.querySelector('.bookButton');
+
+bookButton.addEventListener("click", () => {
+  populateUI();
+  /*if (
+    e.target.classList.contains("seat") &&
+    e.target.classList.contains("selected")
+  ) {
+    e.target.classList.toggle("sold");
+
+    updateSoldCount();
+
+  }
+  */
 });
 
 // Initial count and total set
