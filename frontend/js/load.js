@@ -70,20 +70,22 @@ async function router() {
   const arrow = document.querySelector('.arrow');
   const movieList = document.querySelector('.nyheter-list');
 
-  const itemNumber = movieList.querySelectorAll("img").length;
+  const itemNumber = 7;
   let clickCounter = 0;
 
-  arrow.addEventListener('click', () => {
-    clickCounter++;
-    if (itemNumber - (4 + clickCounter) > 0) {
-      movieList.style.transform = `translateX(
+  if (route.includes("film&trailer")) {
+    arrow.addEventListener('click', () => {
+      clickCounter++;
+      if (itemNumber - (4 + clickCounter) > 0) {
+        movieList.style.transform = `translateX(
       ${movieList.computedStyleMap().get("transform")[0].x.value
-        - 250}px)`;
-    } else {
-      movieList.style.transform = "translateX(0)";
-      clickCounter = 0;
-    }
-  });
+          - 250}px)`;
+      } else {
+        movieList.style.transform = "translateX(0)";
+        clickCounter = 0;
+      }
+    });
+  }
 
 }
 
