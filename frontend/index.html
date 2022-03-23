@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--compatible with all device and browser -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
@@ -20,15 +19,17 @@
 <body>
 
   <header>
-    <img src="./resources/FV.png" alt="logo" id="logo">
-
-    <button class="mobile-nav-dropdown" aria-controls="nav" aria-expanded="false">
-      <span class="sr-only"></span></button>
-
-    <nav class="primary-navigation" data-visible="false" id="left">
+    <nav id="left">
+      <img src="./resources/FV.png" alt="logo" id="logo">
       <a class="active" href="./start">Start</a>
+      <a href="./biljetter">Biljetter</a>
       <a href="./film&trailer">Filmer & Trailer</a>
       <a href="./partials/jackAss.html"></a>
+    </nav>
+    <nav id="right">
+      <a class="user" href="">
+        <img src="./resources/contacts-24.png" alt="user-logo" id="userLogo">
+        David</a>
     </nav>
   </header>
 
@@ -36,95 +37,13 @@
   </main>
   <footer>
 
-    <div class="row primary">
-      <div class="column about">
-
-        <h3>HKR Developer</h3>
-
-        <p>
-          FilmVisarna AB är ett projekt som utvecklats av Martin, Dino, Ibrahim, Hassan och David
-          för webbutvecklingsprojekt vid Högskolan Kristianstad. Projektet måste förinstallera Node express
-          och Sqlite3 bör starta via Node index.
-        </p>
-
-        <div class="social">
-          <i class="fa-brands fa-facebook-square"></i>
-          <i class="fa-brands fa-instagram-square"></i>
-          <i class="fa-brands fa-twitter-square"></i>
-          <i class="fa-brands fa-youtube-square"></i>
-          <i class="fa-brands fa-whatsapp-square"></i>
-        </div>
-      </div>
-
-      <div class="column links">
-        <h3>All Movies</h3>
-
-        <ul>
-
-          <li>
-            <a href="#Filmer">Filmer</a>
-          </li>
-          <li>
-            <a href="#videoklipp">Videoklipp</a>
-          </li>
-          <li>
-            <a href="#Kommande-filmer">Kommande Filmer</a>
-          </li>
-          <li>
-            <a href="#Internationella-filmer">Internationella Filmer</a>
-          </li>
-        </ul>
-
-      </div>
-
-
-      <div class="column links">
-        <h3>Some Links</h3>
-        <ul>
-          <li>
-            <a href="#faq">F.A.Q</a>
-          </li>
-          <li>
-            <a href="#cookies-policy">Cookies Policy</a>
-          </li>
-          <li>
-            <a href="#terms-of-services">Terms Of Service</a>
-          </li>
-          <li>
-            <a href="#support">Support</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="column subscribe">
-        <h3>Newsletter</h3>
-        <div>
-          <input type="email" placeholder="Your email id here" />
-          <button>Subscribe</button>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="row copyright">
-      <div class="footer-menu">
-
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
-        <a href="">Social</a>
-
-      </div>
-      <p>Copyright &copy; 2021 HKR Developer</p>
-    </div>
+    <p class="copyright">© Filmvisarna AB 2022</p>
   </footer>
   <script src="./js/main.js"></script>
   <script src="./js/load.js"></script>
-  <script src="../js/main.js"></script>
   <script src="../js/list.js"></script>
   <script src="../js/movie.js"></script>
+  <script src="../js/biljetter.js"></script>
 </body>
 
 </html>

@@ -44,11 +44,17 @@ function movieDetails(cssSelector, movie) {
 }
 
 // For the responsive nav
-const primaryNav = document.querySelector('.primary-navigation');
-const navDropDown = document.querySelector('.mobile-nav-dropdown');
 
-navDropDown.addEventListener('click', (event) => {
+
+document.querySelector("body").addEventListener("click", function (event) {
+  
+  let navDropDown = event.target.closest(".mobile-nav-dropdown")  
+  if (!navDropDown) {
+  
+    return;
+  }
   const visibility = primaryNav.getAttribute('data-visible');
+  const primaryNav = document.querySelector('.primary-navigation');
 
   if (visibility === "false") {
     primaryNav.setAttribute('data-visible', true);
@@ -57,4 +63,29 @@ navDropDown.addEventListener('click', (event) => {
     primaryNav.setAttribute('data-visible', false);
     navDropDown.setAttribute('aria-expanded', false);
   }
-});
+  
+
+})
+
+
+//document.querySelector("body").addEventListener("submit", function (event) {
+  
+  //event.preventDefault()
+  //console.log(event.target.closest("form").getAttribute("name"))
+
+
+//})
+  console.log("outsidJJJJJ")
+document.querySelector("body").addEventListener("click", function (event) {
+  console.log("in button selector")
+  let button = event.target.closest("button")
+  if (!button) {
+    return
+  }
+  let name = button.getAttribute("name")
+  history.pushState(null, null, "biljetter-" + name)
+  router()
+  
+ // alert("trying to buy tickets to" + name)
+})
+

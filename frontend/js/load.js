@@ -1,4 +1,4 @@
-document.querySelector('header').addEventListener('click', function (event) {
+document.querySelector('body').addEventListener('click', function (event) {
   // event = an object with info about the event
   // event.target = the innermost HTML-element I clicked
   // closest - a method all HTML-element have
@@ -61,7 +61,9 @@ async function router() {
   content.includes("<title>Error: Could not find page</title>")
 
   document.querySelector("main").innerHTML = content;
-
+  if (route.includes("biljetter")) {
+  ticketManager()
+}
   route === "/partials/start.html" && start();
 
 }
