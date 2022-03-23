@@ -375,16 +375,31 @@ padding: 50px;
 
 .nyheter-list-wrapper {
   position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  font-size: 80px;
+  color: whitesmoke;
+  opacity: .8;
+  position: absolute;
+  top: 110px;
+  right: 0;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .nyheter-list {
   display: flex;
   align-items: center;
   height: 300px;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
 }
 
 .nyheter-list-item {
-  margin-right: 30px;
+  margin-right: 25px;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -399,6 +414,7 @@ padding: 50px;
   height: 260px;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
+  border-radius: 12px;
 }
 
 footer {
