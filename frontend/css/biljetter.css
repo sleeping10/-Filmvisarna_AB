@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-
-* {
-  box-sizing: border-box;
-}
+@import url("style.css");
 
 body {
   background-color: black;

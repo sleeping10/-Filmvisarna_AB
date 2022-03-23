@@ -50,7 +50,7 @@ function makeMenuChoiceActive(route) {
 
 async function router() {
   let route = location.pathname;
-  console.log(location.pathname)
+  //console.log(location.pathname)
   makeMenuChoiceActive(route);
 
   route = route === "/" ? "/start" : route;
