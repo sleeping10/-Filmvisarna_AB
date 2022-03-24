@@ -67,6 +67,7 @@ async function router() {
   route === "/partials/start.html" && start();
 
   arrowFunction();
+  ifMozilla();
 
 }
 
@@ -158,9 +159,24 @@ function arrowFunction() {
           clickCounter = 0;
         }
       }
-
-
     });
   }
+}
 
+// Arrow function for movie list does not work in Mozilla firefox
+function ifMozilla() {
+  if (navigator.userAgent.indexOf("Firefox") != -1) {
+    const arrow = document.querySelector('.arrow');
+    const movieList = document.querySelector('.nyheter-list');
+    const movieListWrapper = document.querySelector('.nyheter-list-wrapper');
+
+    arrow.style.display = "none";
+    movieList.style.display = "flex";
+    movieList.style.flexWrap = "wrap";
+    movieListWrapper.style.overflow = "visible";
+
+    console.log("I firefox")
+  } else {
+    console.log("inte i firefox")
+  }
 }
