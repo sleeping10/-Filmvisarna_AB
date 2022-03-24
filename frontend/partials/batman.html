@@ -1,123 +1,80 @@
 <article>
   <!--Kom ihåg att hänvisa till folder osså-->
-  <style>
-    body{background-color: black;}
-    .h1 {
-      text-align: left;
-      position: relative;
-      top: -150px;
-      color: rgb(248, 248, 248);
-      
-    }
-  </style>
+  <div class="containerDetail">
 
-  <style>
-    .h2 {
+    <div class="trailerAndImage">
 
-      text-align: center;
+      <img class="detailImage" src="../resources/batman2.jpg" width="200" height="260" alt="SATOR">
 
-    }
-  </style>
+      <div class="h2">
+        <iframe width="420" height="315" allow="fullscreen" src="https://www.youtube.com/embed/mqqft2x_Aa4?">
+        </iframe>
+      </div>
+    </div>
+    <div class="titleAndButton">
+      <h1 class="headTitle">The Batman</h1>
+      <button class="ticketsButton" name="batman" onclick="loadBooking()">köp biljetter</button>
+    </div>
 
-  <style>
-    .h3,
-    .h4,
-    .h5,
-    .h6,
-    .h7 {
-      color: grey;
-
-    }
-  </style>
-
-  <div class="h2">
-    <!---->
-
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/mqqft2x_Aa4?">
-    </iframe>
-  </div>
-  <button name="batman" onclick="loadBooking()">köp biljetter</button>
-  
-    <img src="../resources/batman2.jpg" width="200" height="260" alt="SATOR">
     <p>I två år har Bruce Wayne vakat över gatorna i Gotham City som Batman. När en mördare riktar in sig på Gothams
-      elit
-      med en serie av sadistiska mord,</p>
-    <p> leder ett spår av kryptiska ledtrådar in Batman i den undre världen.</p>
-    <p> Bevisen leder närmare och närmare hans egen familj och vidden av mördarens planer blir tydliga.
-      Batman måste skapa nya allianser och avslöja den
-      skyldige för att rädda Gotham City.</p>
-    <p></p>
+      elit med en serie av sadistiska mord, leder ett spår av kryptiska ledtrådar in Batman i den undre världen.
+      Bevisen leder närmare och närmare hans egen familj och vidden av mördarens planer blir tydliga.
+      Batman måste skapa nya allianser och avslöja den skyldige för att rädda Gotham City.</p>
+
     <div class="h3">
-      <p>
+      <p class="regi">
         Regi:
       </p>
 
     </div>
-    <p>
+    <p class="regiName">
       Matt Reeves
     </p>
 
     <div class="h4">
-      <p>
+      <p class="actors">
         Skådespelare:
       </p>
     </div>
 
-    <p>
+    <p class="actorNames">
       Robert Pattinson, Zoë Kravitz, Colin Farrell, Paul Dano, Andy Serkis, Peter Sarsgaard, John Turturro, Jeffrey
       Wright
     </p>
 
     <div class="h5">
-      <p>
+      <p class="title">
         Orginatitel:
       </p>
     </div>
 
-    <p>
+    <p class="titleName">
       The Batman
     </p>
 
     <div class=h6>
-      <p>
+      <p class="language">
         Orginalspråk:
       </p>
     </div>
-    <p>
+    <p class="languageName">
       Engelska
     </p>
     <div class="h7">
-      <p>
+      <p class="date">
         Premiär:
       </p>
     </div>
 
-    <p>
+    <p class="dateDate">
       2 mar 2022
     </p>
 
 
     <script src="/js/readJson.js"></script>
   </div>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  </style>
-  <div class="row">
+  <div class="imageRow">
     <div class="column">
       <img src="/resources/batmanpic/bb.jpg" alt="batman and someone" style="width:100%">
     </div>
@@ -128,7 +85,5 @@
       <img src="/resources/batmanpic/The-Batman-Featured-1.jpg" alt="batman alone" style="width:100%">
     </div>
   </div>
-
-
 
 </article>

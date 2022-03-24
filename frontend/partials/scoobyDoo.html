@@ -1,127 +1,84 @@
 <article>
   <!--Kom ihåg att hänvisa till folder osså-->
+  <div class="containerDetail">
 
-  <style>
-    body{background-color: black;}
-    .h1 {
-      text-align: left;
-      position: relative;
-      top: -150px;
-      color: white;
+    <div class="trailerAndImage">
 
-    }
-  </style>
+      <img class="detailImage" src="/resources/scoobyDoo.jpg" width="200" height="260" alt="SATOR">
 
-  <style>
-    .h2 {
+      <div class="h2">
+        <iframe width="420" height="315" allow="fullscreen" src="https://www.youtube.com/embed/RFeNB8IlPlc?">
+        </iframe>
+      </div>
+    </div>
+    <div class="titleAndButton">
+      <h1 class="headTitle">Scooby-Doo on zombie island</h1>
+      <button class="ticketsButton" name="scoobyDoo" onclick="loadBooking()">köp biljetter</button>
+    </div>
 
-      text-align: center;
+    <p>Mysteriegänget har splittrats och gått skilda vägar, för alla spöken de träffat var bara bluff. Daphne har sin
+      egen TV-show, som produceras av Fred. Velma driver en bokhandel som är helt specialiserad på kriminalromaner och
+      deckare. Shaggy och Scooby-Doo letar smuggelgods på en flygplats. En dag ser Shaggy och Scooby Daphne på TV, och
+      de börjar sakna att lösa mysterier tillsammans med sina vänner.
+      Daphnes födelsedag börjar närma sig, och Shaggy och Scooby bestämmer sig för att återförena Mysteriegänget som
+      present
+      till Daphne. Det enda Daphne vill är att hitta riktiga spöken, och då får de en inbjudan till Månskäras Ö.</p>
 
-    }
-  </style>
-
-  <style>
-    .h3,
-    .h4,
-    .h5,
-    .h6,
-    .h7 {
-      color: grey;
-
-    }
-  </style>
-
-  <div class="h2">
-    <!---->
-
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/RFeNB8IlPlc?">
-    </iframe>
-  </div>
-  <div class="h1">
-  <button name="scoobyDoo" onclick="loadBooking()">köp biljetter</button>
-    <img src="/resources/scoobyDoo.jpg" width="200" height="260" alt="SATOR">
-    <p>Mysteriegänget har splittrats och gått skilda vägar, för alla spöken de träffat var bara bluff. Daphne har sin egen
-    TV-show, som produceras av Fred. Velma driver en bokhandel som är helt specialiserad på kriminalromaner och deckare.
-    Shaggy och Scooby-Doo letar smuggelgods på en flygplats.
-    
-    En dag ser Shaggy och Scooby Daphne på TV, och de börjar sakna att lösa mysterier tillsammans med sina vänner. Daphnes
-    födelsedag börjar närma sig, och Shaggy och Scooby bestämmer sig för att återförena Mysteriegänget som present till
-    Daphne.
-    
-    Det enda Daphne vill är att hitta riktiga spöken, och då får de en inbjudan till Månskäras Ö.</p>
-    <p></p>
     <div class="h3">
-      <p>
+      <p class="regi">
         Regi:
       </p>
 
     </div>
-    <p>
+    <p class="regiName">
       Hiroshi Aoyama, Kazumi Fukushima, Jim Stenstrum
     </p>
 
     <div class="h4">
-      <p>
+      <p class="actors">
         Skådespelare:
       </p>
     </div>
 
-    <p>
-      Scott Innes, Billy West, Mary Kay Bergman, Frank Welker, B. J. Ward, Adrienne Barbeau,Tara Charendoff, Cam Clarke, Jim Cummings, Mark Hamill
-
-
+    <p class="actorNames">
+      Scott Innes, Billy West, Mary Kay Bergman, Frank Welker, B. J. Ward, Adrienne Barbeau,Tara Charendoff, Cam
+      Clarke,
+      Jim Cummings, Mark Hamill
     </p>
 
     <div class="h5">
-      <p>
+      <p class="title">
         Orginatitel:
       </p>
     </div>
 
-    <p>
+    <p class="titleName">
       Scooby doo on zombie island
     </p>
 
     <div class=h6>
-      <p>
+      <p class="language">
         Orginalspråk:
       </p>
     </div>
-    <p>
+    <p class="languageName">
       Engelska
     </p>
     <div class="h7">
-      <p>
+      <p class="date">
         Premiär:
       </p>
     </div>
 
-    <p>
+    <p class="dateDate">
       25 maj 2022
     </p>
 
 
     <script src="/js/readJson.js"></script>
   </div>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  </style>
-  <div class="row">
+  <div class="imageRow">
     <div class="column">
       <img src="/resources/scoobypic/gg.jpg" alt="gänget" style="width:100%">
     </div>

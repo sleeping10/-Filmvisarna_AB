@@ -1,121 +1,80 @@
 <article>
   <!--Kom ihåg att hänvisa till folder osså-->
+  <div class="containerDetail">
 
-  <style>
-    body{background-color: black;}
-    .h1 {
-      text-align: left;
-      position: relative;
-      top: -150px;
-      color: white;
+    <div class="trailerAndImage">
 
-    }
-  </style>
+      <img class="detailImage" src="/resources/findingNemo.jpg" width="200" height="260" alt="SATOR">
 
-  <style>
-    .h2 {
+      <div class="h2">
+        <iframe width="420" height="315" allow="fullscreen" src="https://www.youtube.com/embed/2zLkasScy7A?">
+        </iframe>
+      </div>
+    </div>
+    <div class="titleAndButton">
+      <h1 class="headTitle">Hitta Nemo</h1>
+      <button class="ticketsButton" name="nemo" onclick="loadBooking()">köp biljetter</button>
+    </div>
 
-      text-align: center;
+    <p>Hitta Nemo handlar om clownfisken Marvin som lever ett tryggt och lungt liv med sin son Nemo. Med respekt för
+      havet och dess oförutsedda faror kämpar han för att försöka skydda sin ende son. Men som alla andra unga fiskar
+      längtar
+      även Nemo efter att få utforska revets mysterier.</p>
 
-    }
-  </style>
-
-  <style>
-    .h3,
-    .h4,
-    .h5,
-    .h6,
-    .h7 {
-      color: grey;
-
-    }
-  </style>
-
-  <div class="h2">
-    <!---->
-
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/2zLkasScy7A?">
-    </iframe>
-  </div>
-  <div class="h1">
-    <button name="nemo" onclick="loadBooking()">köp biljetter</button>
-    <img src="/resources/findingNemo.jpg" width="200" height="260" alt="SATOR">
-    <p>Hitta Nemo handlar om clownfisken Marvin som lever ett tryggt och lungt liv med sin son Nemo. Med respekt för havet och
-    dess oförutsedda faror kämpar han för att försöka skydda sin ende son. Men som alla andra unga fiskar längtar även Nemo
-    efter att få utforska revets mysterier.</p>
-    <p></p>
     <div class="h3">
-      <p>
+      <p class="regi">
         Regi:
       </p>
 
     </div>
-    <p>
+    <p class="regiName">
       Andrew Stanton
       Lee Unkrich
     </p>
 
     <div class="h4">
-      <p>
+      <p class="actors">
         Skådespelare:
       </p>
     </div>
 
-    <p>
-        Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe
+    <p class="actorNames">
+      Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe
 
     </p>
 
     <div class="h5">
-      <p>
+      <p class="title">
         Orginatitel:
       </p>
     </div>
 
-    <p>
-     Finding Nemo
+    <p class="titleName">
+      Finding Nemo
     </p>
 
     <div class=h6>
-      <p>
+      <p class="language">
         Orginalspråk:
       </p>
     </div>
-    <p>
+    <p class="languageName">
       Engelska
     </p>
     <div class="h7">
-      <p>
+      <p class="date">
         Premiär:
       </p>
     </div>
 
-    <p>
+    <p class="dateDate">
       20 mar 2022
     </p>
 
-
     <script src="/js/readJson.js"></script>
   </div>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  </style>
-  <div class="row">
+  <div class="imageRow">
     <div class="column">
       <img src="/resources/nemopic/nemo.jpg" alt="doris" style="width:100%">
     </div>
