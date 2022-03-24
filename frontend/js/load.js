@@ -66,26 +66,7 @@ async function router() {
   }
   route === "/partials/start.html" && start();
 
-
-  const arrow = document.querySelector('.arrow');
-  const movieList = document.querySelector('.nyheter-list');
-
-  const itemNumber = 7;
-  let clickCounter = 0;
-
-  if (route.includes("film&trailer")) {
-    arrow.addEventListener('click', () => {
-      clickCounter++;
-      if (itemNumber - (4 + clickCounter) > 0) {
-        movieList.style.transform = `translateX(
-      ${movieList.computedStyleMap().get("transform")[0].x.value
-          - 250}px)`;
-      } else {
-        movieList.style.transform = "translateX(0)";
-        clickCounter = 0;
-      }
-    });
-  }
+  arrowFunction();
 
 }
 
@@ -115,4 +96,71 @@ function loadScript(url, callback) {
 
   script.src = url;
   document.getElementsByTagName("head")[0].appendChild(script);
+}
+
+
+function arrowFunction() {
+  const arrow = document.querySelector('.arrow');
+  const movieList = document.querySelector('.nyheter-list');
+
+  let route = location.pathname;
+
+  const itemNumber = 7;
+  let clickCounter = 0;
+
+  if (route.includes("film&trailer")) {
+    arrow.addEventListener('click', () => {
+      clickCounter++;
+
+      if ($(window).width() > 1280) {
+        if (itemNumber - (4 + clickCounter) > 0) {
+          movieList.style.transform = `translateX(
+      ${movieList.computedStyleMap().get("transform")[0].x.value
+            - 250}px)`;
+        } else {
+          movieList.style.transform = "translateX(0)";
+          clickCounter = 0;
+        }
+      } else if (($(window).width() < 1280) && ($(window).width() > 1000)) {
+        if (itemNumber - (3 + clickCounter) > 0) {
+          movieList.style.transform = `translateX(
+      ${movieList.computedStyleMap().get("transform")[0].x.value
+            - 250}px)`;
+        } else {
+          movieList.style.transform = "translateX(0)";
+          clickCounter = 0;
+        }
+      } else if (($(window).width() < 1000) && ($(window).width() > 750)) {
+        if (itemNumber - (2 + clickCounter) > 0) {
+          movieList.style.transform = `translateX(
+      ${movieList.computedStyleMap().get("transform")[0].x.value
+            - 250}px)`;
+        } else {
+          movieList.style.transform = "translateX(0)";
+          clickCounter = 0;
+        }
+      } else if (($(window).width() < 750) && ($(window).width() > 494)) {
+        if (itemNumber - (1 + clickCounter) > 0) {
+          movieList.style.transform = `translateX(
+      ${movieList.computedStyleMap().get("transform")[0].x.value
+            - 250}px)`;
+        } else {
+          movieList.style.transform = "translateX(0)";
+          clickCounter = 0;
+        }
+      } else {
+        if (itemNumber - (0 + clickCounter) > 0) {
+          movieList.style.transform = `translateX(
+      ${movieList.computedStyleMap().get("transform")[0].x.value
+            - 250}px)`;
+        } else {
+          movieList.style.transform = "translateX(0)";
+          clickCounter = 0;
+        }
+      }
+
+
+    });
+  }
+
 }
