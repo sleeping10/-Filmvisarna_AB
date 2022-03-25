@@ -19,8 +19,6 @@ function renderMovieList(cssSelector, list) {
   }
 
   document.querySelector(cssSelector).innerHTML = html;
-
-  //When click on the image will take you to movie page//NOt implemented yet
   movieDetails();
 
   return html;
@@ -32,7 +30,8 @@ function movieDetails(cssSelector, movie) {
     items[i].addEventListener("click", function () {
       console.log(items[i]);
       var movieId = items[i].id;
-      showMovieById(movieId);
+      //not implemented!
+      movieshows(movieId);
     });
   }
 } async function start() {

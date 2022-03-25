@@ -16,6 +16,7 @@
     "-": "^0.0.1",
     "better-sqlite3": "^7.5.0",
     "express": "^4.17.3",
+    "node.js": "^0.0.1-security",
     "nodemon": "^2.0.15",
     "save": "^2.4.0"
   },
