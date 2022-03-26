@@ -149,12 +149,13 @@ h1 {
 .featured-title {
   color: whitesmoke;
   margin-top: 50px;
-  
+  margin-left: 50px;
   font-size: 50px;
   max-width: 270px;
 }
 
 .featured-desc {
+  padding-left: 51px;
   margin: 30px 0;
   max-width: 500px;
   color: whitesmoke;
@@ -174,6 +175,27 @@ h1 {
 
 .featured-button:hover {
   background-color: var(--color-secondary);
+}
+
+@media screen and (max-width: 440px) {
+  .featured-button {
+    margin-left: 0px;
+  }
+
+  .featured-desc {
+    padding-left: 0px;
+  }
+
+  .featured-title {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .featured-content {
+    padding: 0px;
+    padding-top: 50px;
+  }
+
 }
 
 .nyheter-list-container {
