@@ -66,6 +66,7 @@ async function router() {
 
   arrowFunction();
   ifMozilla();
+  setInterval(featureResponsiveText, 0);
 
 }
 

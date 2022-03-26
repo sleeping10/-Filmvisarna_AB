@@ -82,8 +82,34 @@ function loadBooking() {
 }
 
 function loadBatman() {
-
   history.pushState(null, null, "batman");
   router();
 }
+
+
+function featureResponsiveText() {
+  var featureTitle = document.querySelector('.featured-title');
+  var featureDesc = document.querySelector('.featured-desc');
+  var featureContent = document.querySelector('.featured-content');
+  var featureBtn = document.querySelector('.featured-button');
+
+  if ($(window).width() > 440) {
+    featureTitle.style.marginLeft = "50px";
+    featureTitle.style.fontSize = "50px";
+    featureDesc.style.paddingLeft = "51px";
+    featureContent.style.padding = "50px";
+    featureBtn.style.marginLeft = "50px";
+
+  } else {
+    featureTitle.style.marginLeft = "0px";
+    featureDesc.style.paddingLeft = "0px";
+    featureContent.style.padding = "0px";
+    featureBtn.style.marginLeft = "0px";
+    featureTitle.style.fontSize = "25px";
+    featureContent.style.paddingTop = "50px";
+
+  }
+}
+
+
 
