@@ -17,86 +17,16 @@ h1 {
   color: white;
 }
 
+.heading-title {
+  color: white;
+  margin-left: 7px;
+  font-size: 26px;
+}
+
 .copyright {
   text-align: center;
 }
 
-header {
-  padding: 12px;
-  background-color: var(--color-primary-dark);
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  text-decoration: none;
-  padding: 0 4px;
-}
-
-.primary-navigation[data-visible="true"] {
-  transform: translateX(0%);
-}
-
-.mobile-nav-dropdown {
-  display: none;
-}
-
-/* responsive drop down nav-menu */
-@media (max-width: 40em) {
-  nav {
-    position: fixed;
-    z-index: 1000;
-    inset: 0 0 0 30%;
-    flex-direction: column;
-    padding: min(30vh, 6rem) 2em;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
-
-    transform: translateX(100%);
-    transition: transform 250ms ease-out;
-  }
-
-  .mobile-nav-dropdown {
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    background-color: transparent;
-    background-image: url("/resources/menu_white_24dp.svg");
-    background-repeat: no-repeat;
-    width: 2rem;
-    aspect-ratio: 1;
-    top: 2rem;
-    right: 2rem;
-    border: none;
-    cursor: pointer;
-  }
-
-  .mobile-nav-dropdown[aria-expanded="true"] {
-    background-image: url("/resources/close_white_24dp.svg");
-  }
-}
-
-#logo {
-  width: 60px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-a {
-  float: left;
-  margin-left: 10px;
-  margin: 10px;
-  font-size: 16px;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-secondary);
-}
 .image-container {
   width: 100%;
   min-height: 600px;
@@ -156,12 +86,20 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 50px;
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.moviesOuterContainer {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
 }
 
 .box .box-img {
   width: 100%;
   height: 500px;
-  cursor: pointer;
+  
   object-fit: cover;
 }
 
@@ -171,10 +109,13 @@ a:hover {
   object-fit: cover;
 }
 
+/*
 .box .box-img img:hover {
   transform: translateY(-20px);
   transition: 0.5s all linear;
 }
+*/
+
 /*MOVIES-CONTAINER-TEXT*/
 .box h3 {
   font-size: 25px;
@@ -187,92 +128,8 @@ a:hover {
   font-size: 20px;
   font-weight: 10px;
   color: #fff;
-} /*FILTER BOX*/
-.filter-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  box-sizing: border-box;
-  margin-top: 50px;
-}
-.age-filter,
-.type-filter {
-  margin: 10px;
 }
 
-.filter-label-age,
-.filter-label-type {
-  position: relative;
-  display: inline-block;
-  font-size: 20px;
-  margin-top: 25px;
-  color: white;
-}
-
-.filter-label-age select,
-.filter-label-type select {
-  display: block;
-  width: 100px;
-  min-height: 35px;
-  background: var(--heading-color);
-  color: rgb(252, 249, 249);
-  border-radius: 3px;
-  border: 2px solid cadetblue;
-  outline: none;
-  padding: 0 20px 0 10px;
-  margin-top: 5px;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-}
-
-.filter-label-age::after,
-.filter-label-type::after {
-  content: "";
-  border-style: solid;
-  border-color: transparent;
-  border-top-color: rgb(250, 249, 249);
-  display: inline-block;
-  border-radius: 2px;
-  position: absolute;
-  right: 10px;
-}
-
-.filter-label-age .selector-options,
-.filter-label-type .selector-options {
-  list-style: none;
-  padding: 5px 0;
-  margin: 0;
-  background: var(--color-secondary);
-  color: #fff;
-  border-radius: 4px;
-  z-index: 1;
-  width: 96%;
-  position: absolute;
-  left: 2%;
-  top: 35%;
-  bottom: 10px;
-}
-
-.filter-label-age .selector-options li,
-.filter-label-type .selector-options li {
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.filter-label-age .selector-options li:hover,
-.filter-label-type .selector-options li:hover {
-  background: #84f5fd;
-}
 .movieTrailerContainer {
   margin-top: 300px;
   display: flex;
@@ -295,11 +152,6 @@ a:hover {
   margin-left: 50px;
   font-size: 50px;
   max-width: 270px;
-  cursor: pointer;
-}
-
-.featured-title:hover {
-  text-decoration: underline;
 }
 
 .featured-desc {
@@ -380,4 +232,5 @@ footer {
   background-color: #121315;
   color: #a7a7a7;
   font-size: 16px;
+  padding: 11px;
 }

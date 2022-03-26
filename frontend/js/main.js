@@ -42,22 +42,19 @@ function movieDetails(cssSelector, movie) {
   );
 }
 
-// For the responsive nav
-
-
 document.querySelector("body").addEventListener("click", function (event) {
   console.log("nav in")
-  let navDropDown = event.target.closest(".mobile-nav-dropdown")  
+  let navDropDown = event.target.closest(".mobile-nav-dropdown")
   if (!navDropDown) {
     console.log("inne i if")
     return;
 
   }
   console.log("primarynav")
-  
+
   const primaryNav = document.querySelector('.primary-navigation');
   const visibility = primaryNav.getAttribute('data-visible');
-console.log("nav in in")
+  console.log("nav in in")
   if (visibility === "false") {
     primaryNav.setAttribute('data-visible', true);
     navDropDown.setAttribute('aria-expanded', true);
@@ -65,41 +62,16 @@ console.log("nav in in")
     primaryNav.setAttribute('data-visible', false);
     navDropDown.setAttribute('aria-expanded', false);
   }
-  
-
 })
 
-
-//document.querySelector("body").addEventListener("submit", function (event) {
-  
-  //event.preventDefault()
-  //console.log(event.target.closest("form").getAttribute("name"))
-
-
-//})
 console.log("outsidJJJJJ")
 const button1 = document.querySelector(".test1")
 function loadBooking() {
   console.log("är inne i button ")
   let route = location.pathname;
-console.log(location.pathname);
-  
-    console.log("in button selector")
-    let button = event.target.closest("button")
-    if (!button) {
-      return
-    }
-    let name = button.getAttribute("name")
-    history.pushState(null, null, "biljetter-" + name)
-  router()
-}
-  
-  
-/*document.querySelector("body").addEventListener("click", function (event) {
- // let route = location.pathname;
-//console.log(location.pathname);
-  if (route.includes("booo")) {
-     console.log("in button selector")
+  console.log(location.pathname);
+
+  console.log("in button selector")
   let button = event.target.closest("button")
   if (!button) {
     return
@@ -107,9 +79,11 @@ console.log(location.pathname);
   let name = button.getAttribute("name")
   history.pushState(null, null, "biljetter-" + name)
   router()
-  }
- */
-  
- // alert("trying to buy tickets to" + name)
-//})
+}
+
+function loadBatman() {
+
+  history.pushState(null, null, "batman");
+  router();
+}
 

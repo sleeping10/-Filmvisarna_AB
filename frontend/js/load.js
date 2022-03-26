@@ -46,8 +46,6 @@ function makeMenuChoiceActive(route) {
   }
 }
 
-
-
 async function router() {
   let route = location.pathname;
   //console.log(location.pathname)
