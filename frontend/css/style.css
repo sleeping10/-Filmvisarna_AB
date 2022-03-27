@@ -45,35 +45,6 @@ h1 {
   z-index: -1;
 }
 
-.btn,
-.apply-filter-btn {
-  height: 35px;
-  min-width: 80px;
-  margin-left: 10px;
-  color: #84f5fd;
-  font-weight: 500;
-  border-radius: 10px;
-  color: whitesmoke;
-  text-align: center;
-  display: inline-block;
-}
-.btn {
-  padding-top: 5px;
-}
-.btn:hover,
-.apply-filter-btn:hover {
-  background-color: #3a4e48;
-  cursor: pointer;
-}
-.apply-filter-btn {
-  height: 30px;
-  width: 60px;
-  background-color: #53535e;
-  border-radius: 10px;
-  color: white;
-  margin-top: 65px;
-}
-
 /*MOVIES-CONTAINER*/
 .movies-container,
 .active-movies-container {

@@ -172,9 +172,5 @@ function ifMozilla() {
     movieList.style.display = "flex";
     movieList.style.flexWrap = "wrap";
     movieListWrapper.style.overflow = "visible";
-
-    console.log("I firefox")
-  } else {
-    console.log("inte i firefox")
   }
 }

@@ -1,11 +1,13 @@
  /*FILTER BOX*/
 .filter-box {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 380px;
+  margin: 0 auto;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-size: 20px;
-  box-sizing: border-box;
   margin-top: 50px;
 }
 .age-filter,
@@ -17,8 +19,7 @@
 .filter-label-type {
   position: relative;
   display: inline-block;
-  font-size: 20px;
-  margin-top: 25px;
+  font-size: 18px;
   color: white;
 }
 
@@ -27,18 +28,13 @@
   display: block;
   width: 100px;
   min-height: 35px;
-  background: var(--heading-color);
-  color: rgb(252, 249, 249);
+  background-color: var(--color-primary);
+  color: #6a7b76;
   border-radius: 3px;
-  border: 2px solid cadetblue;
+  border: 2px solid var(--color-primary-dark);
   outline: none;
   padding: 0 20px 0 10px;
-  margin-top: 5px;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
 }
 
 .filter-label-age::after,
@@ -83,4 +79,20 @@
 .filter-label-age .selector-options li:hover,
 .filter-label-type .selector-options li:hover {
   background: #84f5fd;
+}
+
+.apply-filter-btn:hover {
+  background-color: var(--color-secondary);
+  cursor: pointer;
+}
+.apply-filter-btn {
+  height: 35px;
+  max-width: 80px;
+  width: 100%;
+  margin-top: 28px;
+  margin-left: 5px;
+  background-color: var(--color-primary-dark);
+  border-radius: 10px;
+  color: white;
+  border: none;
 }

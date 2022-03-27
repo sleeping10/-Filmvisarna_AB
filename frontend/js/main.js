@@ -64,10 +64,9 @@ document.querySelector("body").addEventListener("click", function (event) {
   }
 })
 
-console.log("outsidJJJJJ")
 const button1 = document.querySelector(".test1")
+
 function loadBooking() {
-  console.log("är inne i button ")
   let route = location.pathname;
   console.log(location.pathname);
 
